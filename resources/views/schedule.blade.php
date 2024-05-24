@@ -119,50 +119,10 @@
     </section>
     <!-- SCHEDULE SECTION -->
     <!-- Article Section -->
-    <section class="articles">
-        <div class="text-center">
-            <h2>upcoming events</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-4">
-                    <div class="image">
-                        <img src="{{  asset('build/assets/img/image1.png') }}" class="img-responsive" alt="" />
-                        <a href="#">Swimming and the CrossFit Games: Why Is It Everyone's Weak Link?</a>
-                    </div>
-                    <div class="info">
-                        <span><b>Date:</b> 10/12/2016</span>
-                        <span><b>Location:</b> Our fitness club</span>
-                        <p>Stretching is a fundamental part of any workout programme and is essential for well rounded fitness sessions. On this course you will build upon the knowledge from your previous fitness qualification and explore advanced stretching techniques. This includes equipment stretches, a wider range of stretching types and more specific progressions. </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="image">
-                        <img src="{{  asset('build/assets/img/image12.jpg') }}" class="img-responsive" alt="" />
-                        <a href="#">A Movie in the Park:<br />Kung Fu Panda</a>
-                    </div>
-                    <div class="info">
-                        <span><b>Date:</b> 10/12/2016</span>
-                        <span><b>Location:</b> Our fitness club</span>
-                        <p>Stretching is a fundamental part of any workout programme and is essential for well rounded fitness sessions. On this course you will build upon the knowledge from your previous fitness qualification and explore advanced stretching techniques. This includes equipment stretches, a wider range of stretching types and more specific progressions. </p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                    <div class="image">
-                        <img src="{{  asset('build/assets/img/image11.jpg') }}" class="img-responsive" alt="" />
-                        <a href="#">A Movie in the Park:<br />Kung Fu Panda</a>
-                    </div>
-                    <div class="info">
-                        <span><b>Date:</b> 10/12/2016</span>
-                        <span><b>Location:</b> Our fitness club</span>
-                        <p>Stretching is a fundamental part of any workout programme and is essential for well rounded fitness sessions. On this course you will build upon the knowledge from your previous fitness qualification and explore advanced stretching techniques. This includes equipment stretches, a wider range of stretching types and more specific progressions. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+    @include('partials.events-section')
     <!-- Article Section -->
-    <section class="about_event">
+    {{-- <section class="about_event">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -179,7 +139,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 </div>
     <!-- About SECTION -->
 @endsection

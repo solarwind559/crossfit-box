@@ -13,15 +13,5 @@
             </div>
             @include('partials.blog-section')
 
-            <div class=" text-center">
-                {{-- @if ($currentPage > 1)
-                    <a href="{{ url('blog?page=' . ($currentPage - 1)) }}">« New Articles</a>
-                @endif
-                @if ($currentPage < $totalPages)
-                    <a href="{{ url('blog?page=' . ($currentPage + 1)) }}">Older Articles »</a>
-                @endif --}}
-                {{-- {{ $posts->links() }} --}}
-
-            </div>
-</section>
+    </section>
 </div>

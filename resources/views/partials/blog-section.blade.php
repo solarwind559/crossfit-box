@@ -13,6 +13,10 @@
                     </div>
                 @endforeach
             </div>
-            <div class="text-center">
-                {{ $posts->links() }}
-            </div>
+            {{-- using `Request` object to check the current URL --}}
+            @if (request()->path() !== '/')
+                <div class="text-center">
+                    {{ $posts->links() }}
+                </div>
+            @endif
+

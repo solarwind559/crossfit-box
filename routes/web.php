@@ -3,6 +3,7 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TrainerController;
 
@@ -18,9 +19,14 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/schedule', function () {
-    return view('schedule');
-});
+// Route::get('/schedule', function () {
+//     return view('schedule');
+// });
+
+Route::get('/schedule', [EventController::class, 'index']);
+Route::get('/schedule/event/{id}', [EventController::class, 'show'])->name('event.show');
+
+
 
 Route::get('/contact', function () {
     return view('contact');
@@ -42,8 +48,6 @@ Route::get('/home', [TrainerController::class, 'showAtHome']);
 Route::get('/coaches', [TrainerController::class, 'showAtCoaches']);
 
 Route::get('/blog', [HomeController::class, 'index']);
-
-// Route::get('/blog/post={id}', [HomeController::class, 'show'])->name('post.show');
 Route::get('/blog/post/{id}', [HomeController::class, 'show'])->name('post.show');
 
 
