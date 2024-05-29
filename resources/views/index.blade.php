@@ -1,9 +1,7 @@
 @extends('layouts.master')
 
+@section('title', 'Blog | CrossfitBox')
 
-<x-navigation>
-
-</x-navigation>
 <div class="page page_blog">
 
     <section class="blog articles">
@@ -12,6 +10,5 @@
                 <h2>Blog</h2>
             </div>
             @include('partials.blog-section')
-
     </section>
 </div>

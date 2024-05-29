@@ -1,10 +1,7 @@
 @extends('layouts.master')
 
-<x-navigation>
+@section('title', 'Events | CrossfitBox')
 
-</x-navigation>
-
-@section('single-event')
     <div class="page about single-event">
         <section class="about_cont">
             <div class="container">
@@ -14,7 +11,7 @@
                     </div>
                     <div class="col-md-7 pull-right info">
                         <h5>
-                            <span><b>{{ $event->date }}</b></span> at
+                            <span><b>{{ $event->date }}, </b></span>
                             <span><b>{{ $event->time }}</b></span>
                         </h5>
                         <p><b>Location:</b> {{ $event->location }}</p>
@@ -28,4 +25,3 @@
         @include('partials.events-section')
         <!-- Article Section -->
     </div>
-{{-- @endsection --}}

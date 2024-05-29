@@ -14,7 +14,7 @@
                 </div>
                 <div class="info">
                     <h5>
-                        <span><b>{{ $event->date }}</b></span> at
+                        <span><b>{{ $event->date }}, </b></span>
                         <span><b>{{ $event->time }}</b></span>
                     </h5>
                     <p><b>Location:</b> {{ $event->location }}</p>

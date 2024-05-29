@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use App\Models\Post;
 use App\Models\Event;
 use App\Models\Trainer;
+use App\Models\Workout;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -34,6 +35,17 @@ class AppServiceProvider extends ServiceProvider
             // $posts = Post::all();
             $posts = Post::paginate(6);
             $view->with('posts', $posts);
+        });
+
+        View::composer(['home'], function ($view) {
+            // $workouts = Workout::paginate(4);
+
+            $workouts = Workout::paginate(4)->map(function ($workout) {
+                $workout->is_today = Carbon::parse($workout->workout_date)->isToday();
+                return $workout;
+            })->sortByDesc('is_today');
+
+            $view->with('workouts', $workouts);
         });
 
         View::composer(['schedule', 'single-event'], function ($view) {

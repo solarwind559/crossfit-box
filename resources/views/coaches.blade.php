@@ -1,9 +1,6 @@
 @extends('layouts.master')
 
-
-<x-navigation>
-
-</x-navigation>
+@section('title', 'Trainers | CrossfitBox')
 
 @section('coaches')
     <div class="page coaches coaches-page pt-5">

@@ -1,8 +1,6 @@
 @extends('layouts.master')
 
-<x-navigation>
-
-</x-navigation>
+@section('title', 'Blog Post | CrossfitBox')
 
 @section('single-post')
 <div class="page about single-post">

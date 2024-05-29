@@ -1,14 +1,10 @@
 @extends('layouts.master')
 
-
-<x-navigation>
-
-</x-navigation>
+@section('title', 'Schedule | CrossfitBox')
 
 @section('schedule')
 
 <div class="page page_schedule">
-    <!-- About SECTION -->
 	<!-- SCHEDULE SECTION -->
     <section class="schedule schedule-page">
         <div class="text-center">
@@ -118,28 +114,10 @@
         </div>
     </section>
     <!-- SCHEDULE SECTION -->
-    <!-- Article Section -->
 
+    <!-- ARTICLE SECTION -->
     @include('partials.events-section')
-    <!-- Article Section -->
-    {{-- <section class="about_event">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <img src="{{  asset('build/assets/img/big_image3.jpg') }}" class="img-responsive" alt="">
-          </div>
-          <div class="col-md-4">
-            <div class="info">
-                <h4>Upcoming Event</h4>
-                <span><b>Date:</b> 10/12/2016</span>
-                <span><b>Location:</b> Our fitness club</span>
-                <p>My favorite coach, teacher or mentor and what they taught me</p>
-                <p>I’ve been fortunate to have many great coaches during my athletic pursuits. When you’re young you don’t really realize how much these people sacrifice in terms of volunteering time, money and energy into helping kids / athletes grow into productive members of society. When you’re young you don’t really realize how much these people sacrifice in terms of volunteering time, money and energy into helping kids</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> --}}
+    <!-- ARTICLE SECTION -->
+
 </div>
-    <!-- About SECTION -->
 @endsection

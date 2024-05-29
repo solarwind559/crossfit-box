@@ -15,14 +15,6 @@ class EventController extends Controller
     {
         //
         $events = Event::paginate(3);
-        // $date = Carbon::parse($event->event_date)->format('Y-m-d');
-        // $time = Carbon::parse($event->event_date)->format('H:i:s');
-        // $dateTime = Carbon::parse($events->event_date);
-
-        // $date = $dateTime->format('Y-m-d');
-        // $time = $dateTime->format('H:i:s');
-
-        // Pass the paginated events to the view
         return view('schedule', compact('events'));
 
     }

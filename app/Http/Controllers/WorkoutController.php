@@ -13,6 +13,9 @@ class WorkoutController extends Controller
     public function index()
     {
         //
+        // $workouts = Workout::paginate(4);
+
+        // return view('home', compact('workouts'));
     }
 
     /**
