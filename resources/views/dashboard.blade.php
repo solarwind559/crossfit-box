@@ -11,6 +11,14 @@
                 <div class="p-6 text-gray-900">
                     {{ __("You're logged in!") }}
                 </div>
+
+                <aside class="p-6 text-gray-900">
+                    <ul>
+                        <li>Create Post</li>
+                        <li>Create Event</li>
+                    </ul>
+                </aside>
+
             </div>
         </div>
     </div>
