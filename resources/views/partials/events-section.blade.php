@@ -14,12 +14,15 @@
                 </div>
                 <div class="info">
                     <h5>
+                        @if($event->has_passed)
+                            <span class="text-danger">Event has ended!</span>
+                        @endif
                         <span><b>{{ $event->date }}, </b></span>
                         <span><b>{{ $event->time }}</b></span>
                     </h5>
                     <p><b>Location:</b> {{ $event->location }}</p>
                     <hr>
-                    <p>{{ $event->preview }}</p>
+                    <p>{!! word_limit($event->content, 35) !!}...</p>
                     <hr>
                 </div>
             </div>

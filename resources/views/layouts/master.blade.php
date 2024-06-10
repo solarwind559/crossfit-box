@@ -22,6 +22,7 @@
     <link href="{{ asset('build/assets/css/creative.css') }}" rel="stylesheet">
     <link href="{{ asset('build/assets/css/fonts.css') }}" rel="stylesheet">
     <link href="{{ asset('build/assets/vendor/fancybox/jquery.fancybox.css') }}" rel="stylesheet">
+
     <!-- Optionally add helpers - button, thumbnail and/or media -->
     <link rel="stylesheet"
         href="{{ asset('build/assets/vendor/fancybox/helpers/jquery.fancybox-buttons.css?v=1.0.5') }}" type="text/css"
@@ -80,6 +81,16 @@
 
     <!-- Theme JavaScript -->
     <script src="{{ asset('build/assets/js/creative.js') }}"></script>
+
+    <!-- JavaScript confirmation function -->
+    <script>
+        function confirmDelete(e) {
+            e.preventDefault();
+            if (confirm('Are you sure you want to delete this post?')) {
+                document.getElementById('delete-btn').submit();
+            }
+        }
+    </script>
 
 </body>
 

@@ -9,4 +9,15 @@ class Post extends Model
 {
     use HasFactory;
 
+    public function setImageAttribute($value)
+    {
+        $this->attributes['image'] = $value ?? 'default.jpg';
+    }
+
+    protected $fillable = [
+        'title',
+        'image',
+        'content',
+    ];
+
 }

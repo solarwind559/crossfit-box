@@ -64,3 +64,63 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Clone This Project
+
+**PULL CODE FROM GITHUB:**
+```
+gh repo clone solarwind559/crossfit-box
+```
+
+**INSTALLATIONS:**
+```
+composer install
+npm install
+npm install tinymce <!-- rich text editor -->
+```
+
+**DATABASE:**
+```
+create a new database and import this file:
+fitness_center.sql
+```
+
+**SET UP ENVIRONMENT:**
+```
+configure your .env file, enter DB_DATABASE, DB_USERNAME, and DB_PASSWORD according to your local database set up
+php artisan key:generate
+php artisan migrate
+php artisan serve
+```
+
+**ADMIN LOGIN INFO:**
+```
+login page: /admin.login/
+login: admin@admin.com
+password: password
+```
+
+<!-- SCREENSHOTS -->
+<!-- Desktop -->
+![Homepage](<screenshots/Ekrānuzņēmums 2024-06-09 140029.png>)
+![Homepage cont.](<Ekrānuzņēmums 2024-06-09 140055.png>)
+![Homepage cont.](<Ekrānuzņēmums 2024-06-09 140109.png>)
+![Homepage end](<Ekrānuzņēmums 2024-06-09 140129.png>)
+![Blog page](<Ekrānuzņēmums 2024-06-09 140212.png>)
+![Blog post page](<Ekrānuzņēmums 2024-06-09 140240.png>)
+![Coaches page](<Ekrānuzņēmums 2024-06-09 140257.png>)
+![Schedules page](<Ekrānuzņēmums 2024-06-09 140323.png>)
+![Single event page](<Ekrānuzņēmums 2024-06-10 150113.png>)
+![Contact page](<Ekrānuzņēmums 2024-06-09 140541.png>)
+<!-- Mobile -->
+![Homepage](<Ekrānuzņēmums 2024-06-10 160641.png>)
+![Homepge cont.](<Ekrānuzņēmums 2024-06-09 140928.png>)
+![Homepage cont.](<Ekrānuzņēmums 2024-06-09 140959.png>)
+![Homepage end](<Ekrānuzņēmums 2024-06-09 140904.png>)
+![Coaches page](<Ekrānuzņēmums 2024-06-09 141037.png>)
+![Schedule page](<Ekrānuzņēmums 2024-06-09 141105.png>)
+<!-- Admin page -->
+![Admin Dashboard](<Ekrānuzņēmums 2024-06-09 142928.png>)
+![Create Post](<Ekrānuzņēmums 2024-06-09 135812.png>)
+![Edit Post](<Ekrānuzņēmums 2024-06-09 130354.png>)
+![Delete Post](<Ekrānuzņēmums 2024-06-09 144312.png>)

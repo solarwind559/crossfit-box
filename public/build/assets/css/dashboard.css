@@ -1,0 +1,31 @@
+.bg-blue-custom {
+    background-color: #4299e1!important;
+}
+.bg-blue-custom:hover {
+    background-color: #2b6cb0!important;
+}
+
+.text-red-500 {
+    color: rgb(239 68 68);
+}
+
+.success-box {
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+.bg-green-100 {
+    background-color: #dcfce7;
+}
+
+.border-green-400 {
+    border: #4ade80;
+}
+
+.text-green-700 {
+    color: #15803d;
+}
+
+.float-right {
+    float: right;
+}
