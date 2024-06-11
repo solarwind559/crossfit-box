@@ -1064,6 +1064,15 @@ h2:after{
   .coaches .buttons{
     margin-top: 45px;
   }
+  .dashboard {
+    float: none !important;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .dash-ul {
+    padding: 0;
+  }
 }
 @media (max-width: 990px){
   .footer{
@@ -1261,3 +1270,5 @@ hr {
     padding: 0 15px;
     margin-bottom: 15px;
 }
+
+

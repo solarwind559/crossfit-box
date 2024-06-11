@@ -124,3 +124,6 @@ password: password
 ![Create Post](<Ekrānuzņēmums 2024-06-09 135812.png>)
 ![Edit Post](<Ekrānuzņēmums 2024-06-09 130354.png>)
 ![Delete Post](<Ekrānuzņēmums 2024-06-09 144312.png>)
+![Mobile Dashboard](<Ekrānuzņēmums 2024-06-11 221149.png>)
+![Mobile Admin Menu](<Ekrānuzņēmums 2024-06-11 221239.png>)
+![Mobile Edit Post](<Ekrānuzņēmums 2024-06-11 221601.png>)

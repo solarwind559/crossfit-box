@@ -7,8 +7,8 @@
 
     <div class="flex">
 
-        <div class="w-1/3">
-            <div class="px-3 min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-50 text-gray-800">
+        <div class="w-1/3 flex-width">
+            <div class="px-3 min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-gray-800">
                 <div class="flex flex-col top-0 left-0 w-64 bg-white h-full border-l">
                     <div class="overflow-y-auto overflow-x-hidden flex-grow">
                         <ul class="flex flex-col py-4 space-y-1">
@@ -90,7 +90,7 @@
             </div>
         </div>
 
-        <div class="w-full">
+        <div class="w-full hidden md-block">
             <div class="py-12">
                 <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                     <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">

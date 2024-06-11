@@ -30,7 +30,7 @@
                 </li>
             </ul>
             @if (Auth::check())
-                <ul class="py-6">
+                <ul class="dash-ul">
                     <li class="pull-right dashboard">
                         <a class="page-scroll" href="{{ route('dashboard') }}">Dashboard</a>
                     </li>

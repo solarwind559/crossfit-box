@@ -29,3 +29,19 @@
 .float-right {
     float: right;
 }
+
+@media (min-width: 640px) {
+    .md-block {
+        display: block !important;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .flex-width {
+        width: 100% !important;
+    }
+    .flex-width .flex-auto {
+        align-items: center;
+    }
+}
