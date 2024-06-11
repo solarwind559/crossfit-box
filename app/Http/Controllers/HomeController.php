@@ -11,14 +11,9 @@ class HomeController extends Controller
 
     public function index(Request $request)
     {
-        // $paginate_posts = Post::paginate(6);
-        // return view('index', compact('paginate_posts'));
-            // Retrieve paginated posts
+
         $posts = Post::paginate(6);
-
-        // Pass the paginated posts to the view
         return view('index', compact('posts'));
-
 
     }
 

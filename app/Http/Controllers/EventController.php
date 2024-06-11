@@ -102,9 +102,17 @@ class EventController extends Controller
     {
         $event = Event::findOrFail($id);
 
-        // Update the other fields
-        $event->update($request->except('event_date'));
+        $event->update($request->except('event_date', 'image'));
 
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $path = $file->storeAs('images', $filename, 'public');
+            $fullUrl = Storage::disk('public')->url($path);
+
+            $event->image = $fullUrl;
+            $event->save();
+        }
         return redirect()->route('post.event.edit', ['id' => $event->id])->with('success', 'Event updated successfully');
     }
 

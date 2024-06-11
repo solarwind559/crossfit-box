@@ -88,8 +88,18 @@ class PostController extends Controller
     {
         //
         $post = Post::findOrFail($id);
-        $post->update($request->all());
+        // $post->update($request->all());
+        $post->update($request->except('image'));
 
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $filename = time() . '_' . $file->getClientOriginalName();
+            $path = $file->storeAs('images', $filename, 'public');
+            $fullUrl = Storage::disk('public')->url($path);
+
+            $post->image = $fullUrl;
+            $post->save();
+        }
         return redirect()->route('post.edit', ['id' => $post->id])->with('success', 'Post updated successfully');
     }
 
