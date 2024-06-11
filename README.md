@@ -120,7 +120,7 @@ password: password
 ![Coaches page](<Ekrānuzņēmums 2024-06-09 141037.png>)
 ![Schedule page](<Ekrānuzņēmums 2024-06-09 141105.png>)
 <!-- Admin page -->
-![Admin Dashboard](<Ekrānuzņēmums 2024-06-09 142928.png>)
+![Admin Dashboard](<Ekrānuzņēmums 2024-06-11 224412.png>)
 ![Create Post](<Ekrānuzņēmums 2024-06-09 135812.png>)
 ![Edit Post](<Ekrānuzņēmums 2024-06-09 130354.png>)
 ![Delete Post](<Ekrānuzņēmums 2024-06-09 144312.png>)
